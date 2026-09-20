@@ -13,7 +13,7 @@ config_version=5
 config/name="PanaChat"
 run/main_scene="uid://bro3xnftyakme"
 config/features=PackedStringArray("4.7", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="res://stuff/icon.svg"
 
 [display]
 
@@ -21,6 +21,10 @@ window/size/viewport_width=1080
 window/size/viewport_height=1920
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+
+[dotnet]
+
+project/assembly_name="PanaChat"
 
 [physics]
 
