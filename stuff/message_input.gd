@@ -9,6 +9,11 @@ signal messageSent(message)
 func _enter_tree() -> void:
 	sendButton.button_down.connect(sendMessage)
 
+func _process(delta: float) -> void:
+	if (Input.is_action_just_pressed("enter") and !sendButton.disabled):
+		if (!Input.is_action_pressed("shift")):
+			sendMessage()
+
 func sendMessage():
 	if (textEdit.text.is_empty()):
 		return
